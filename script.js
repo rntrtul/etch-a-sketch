@@ -4,6 +4,9 @@ function drawGrid(size){
     while (grid.firstChild) {
         grid.removeChild(grid.firstChild);
     } 
+
+    grid.style.gridTemplateColumns = "1fr ".repeat(size);
+    grid.style.gridTemplateRows = "1fr ".repeat(size);
     
     for (var i = 0; i < size**2 ;i++){
         const square = document.createElement('div');
