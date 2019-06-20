@@ -1,16 +1,15 @@
 #container{
     display: inline-grid;
+    height: 560px;
+    width: 560px;
     grid-template-columns: auto auto auto auto;
-    align-items: center;
 }
 
 .square{
-    border: 1px solid black;
+    border:1px black solid;
     text-align: center;
-    height : 150px;
-    width: 150px;
 }
 
-.square:hover{
-    background-color: azure;    
+.selected{
+    background-color: beige;
 }
